@@ -1,2 +1,2 @@
-# MentorAppProjectUI
-MentorApp Projesi UI-UX Tasarımları
+# MentorAppProject
+MentorApp Projesi Tasarımları
