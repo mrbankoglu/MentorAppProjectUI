@@ -85,13 +85,13 @@ a {
 
 .nav .toggle {
   position: absolute;
-  top: 0.5rem;
-  right: 0rem;
+  top: 2.7rem;
+  right: -3rem;
   background-color: var(--active);
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 3rem;
+  height: 3rem;
   line-height: 1.6rem;
-  font-size: 1.6rem;
+  font-size: 2.8rem;
   color: white;
   cursor: pointer;
 }
