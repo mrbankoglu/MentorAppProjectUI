@@ -110,7 +110,7 @@ a {
   background-color: var(--active);
   box-shadow: inset 0px 0 var(--white);
 }
-}
+
 
 .nav .nav-link:hover {
   background-color: var(--active);
