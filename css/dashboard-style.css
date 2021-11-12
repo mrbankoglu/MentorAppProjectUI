@@ -1,0 +1,130 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+/* Basic Reset */
+:root {
+  --white: #fff;
+  --primary: #A71F23;
+  --active: #6F1215;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 1.6rem;
+  background-color: var(--white);
+  color: var(--primary);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navigation {
+  position: fixed;
+  /* width: 220px; */
+  width: 60px;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: var(--primary);
+  z-index: 100;
+  padding: 1.5rem 0.5rem 2rem;
+  transition: 500ms;
+}
+
+.navigation.active {
+  width: 220px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  color: var(--white);
+}
+.logo-icon img{
+  width: 40px;
+}
+.nav .logo .logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  font-size: 2rem;
+}
+
+.nav .logo .logo-text {
+  font-size: 1.4rem;
+}
+
+.nav .toggle {
+  position: absolute;
+  top: 0.5rem;
+  right: 0rem;
+  background-color: var(--active);
+  width: 1.8rem;
+  height: 1.8rem;
+  line-height: 1.6rem;
+  font-size: 1.6rem;
+  color: white;
+  cursor: pointer;
+}
+
+.nav .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 0.7rem 0.5rem 0.5rem 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0.5rem;
+  color: var(--white);
+  transition: 500ms ease-in-out;
+}
+
+.nav .nav-link.active {
+  background-color: var(--active);
+  box-shadow: inset 0px 0 var(--white);
+}
+}
+
+.nav .nav-link:hover {
+  background-color: var(--active);
+}
+
+.nav .nav-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  margin-right: 1.5rem;
+  margin-left: 1rem;
+}
+
+.nav .nav-text {
+  font-weight: 500;
+}
