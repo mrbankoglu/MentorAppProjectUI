@@ -134,6 +134,12 @@ main{
 .nav .nav-text {
   font-weight: 500;
 }
+.mentor-list{
+  display: flex;
+  flex-direction: row;
+  left: 240px;
+  margin-top: 5rem;
+}
 .main-button{
   display: flex;
   margin-top: 1.5rem;
