@@ -124,7 +124,77 @@ a {
   margin-right: 1.5rem;
   margin-left: 1rem;
 }
-
+main{
+  margin-top: 60px;
+  background: #f1f5f9;
+  min-height: 90vh;
+  padding: 1rem 3rem;
+  
+  }
 .nav .nav-text {
   font-weight: 500;
 }
+.main-button{
+  display: flex;
+  margin-top: 1.5rem;
+}
+.main-button a{
+  background-color: var(--primary);
+  border-radius: 7px;
+  color: white;
+  padding: 10px;
+  margin-right: 1.5rem;
+}
+.main-button a:hover{
+  background-color: var(--white);
+  outline: 1px solid var(--primary);
+  border-radius: 7px;
+  color: var(--primary);
+  padding: 10px;
+}
+
+.main-page .nav-icon{
+align-items: center;
+}
+.main-page{
+  display: flex;
+  flex-direction: column;
+  color: black;
+  position: fixed;
+  top: 80px;
+  left: 240px;
+}
+.main-content{
+  position: relative;
+  margin-left: 240px;
+  transition: margin-left 500ms;
+  }
+  
+  header {
+  position: fixed;
+  top: 0;
+  left: 240px;
+  z-index: 100;
+  width: calc(100% - 240px);
+  background: rgba(255, 255, 255, 0);
+  height: 60px;
+  padding: 0rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+  transition: left 500ms;
+  
+  }
+  
+  .search-wrapper{
+  display: flex;
+  align-items: center;
+  }
+  .search-wrapper input{
+  border: 0;
+  outline: 0;
+  padding: 1rem;
+  height: 38px;
+  
+  }
