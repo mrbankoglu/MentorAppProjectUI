@@ -1,103 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="./css/dashboard-style.css" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="css/dashboard-style.css"/>
+
     <title>Dashboard</title>
   </head>
   <body>
-    <div class="navigation">
-      <nav class="nav">
-        <div>
-          <a href="#" class="logo">
-            <span class="logo-icon">
-              <img src="img/bilgeadam.png" alt="">
-            </span>
-            <span class="logo-text"><b>BilgeAdam</b> Akademi</span>
-          </a>
-          <div class="toggle">
-            <ion-icon name="chevron-forward-outline"></ion-icon>
-          </div>
 
-          <ul class="nav-list">
-            <a href="dashboard.html" class="nav-link">
-              <span class="nav-icon">
-                <ion-icon name="home-outline"></ion-icon>
-              </span>
-              <span class="nav-text">Ana Sayfa</span>
-            </a>
-            <a href="#" class="nav-link">
-              <span class="nav-icon"
-                ><ion-icon name="person-outline"></ion-icon
-              ></span>
-              <span class="nav-text">Yönetici</span>
-            </a>
-            <a href="#" class="nav-link">
-              <span class="nav-icon"
-                ><ion-icon name="briefcase-outline"></ion-icon
-              ></span>
-              <span class="nav-text">Eğitim</span>
-            </a>
-            <a href="egitimprogrami.html" class="nav-link active">
-              <span class="nav-icon"
-                ><ion-icon name="file-tray-full-outline"></ion-icon
-              ></span>
-              <span class="nav-text">Eğitim Programı</span>
-            </a>
-            <a href="#" class="nav-link">
-              <span class="nav-icon"
-                ><ion-icon name="calendar-outline"></ion-icon
-              ></span>
-              <span class="nav-text">Toplantı</span>
-            </a>
-            <a href="#" class="nav-link">
-              <span class="nav-icon"
-                ><ion-icon name="accessibility-outline"></ion-icon
-              ></span>
-              <span class="nav-text">Mentee</span>
-            </a>
-            <a href="mentor.html" class="nav-link">
-              <span class="nav-icon"
-                ><ion-icon name="walk-outline"></ion-icon
-              ></span>
-              <span class="nav-text">Mentor</span>
-            </a>
-            <a href="#" class="nav-link">
-              <span class="nav-icon"
-                ><ion-icon name="reader-outline"></ion-icon
-              ></span>
-              <span class="nav-text">Şablon</span>
-            </a>
-          </ul>
+    <div class="page-container">
+        <div class="page-sidebar-wrapper">
+              <div class="sidebar">
+                    <div class="logo">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./img/bilgeadam.png" alt="logo" class="logo-img mr-3">
+                            <div class="logo-text">
+                                  <b>BilgeAdam</b> Akademi
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nav flex-column menu-link">
+                      <li class="nav-item">
+                        <a href="index.html" class="nav-link"><img src="img/home.png" alt="dashboard">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="yonetici.html" class="nav-link"><img src="img/moderator.png" alt="dashboard">Yönetici</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="egitim.html" class="nav-link"><img src="img/egitim.png" alt="dashboard">Eğitim</a>
+                </li>
+                      <li class="nav-item">
+                        <a href="egitimProgrami.html" class="nav-link"><img src="img/egitimprogrami.png" alt="dashboard">Eğitim Programı</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="toplanti.html" class="nav-link"><img src="img/talk.png" alt="dashboard">Toplantı</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="mentee.html" class="nav-link"><img src="img/yonetici.png" alt="dashboard">Mentee</a>
+                </li>
+                <li class="nav-item">
+                  <a href="mentor.html" class="nav-link"><img src="img/businessman.png" alt="dashboard">Mentör</a>
+              </li>
+              <li class="nav-item">
+                <a href="sablon.html" class="nav-link"><img src="img/sablon.png" alt="dashboard">Şablon</a>
+            </li>
+                    </ul>
+              </div>
         </div>
-        <a href="#" class="nav-link">
-          <span class="nav-icon"
-            ><ion-icon name="log-out-outline"></ion-icon
-          ></span>
-          <span class="nav-text">Çıkış</span>
-        </a>
-      </nav>
-    </div>
-    <div class="main-content">
-      <header>
-      
-      </header>
-    </div>
-    <!-- Ionicons -->
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="top-bar d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <div>
+                          <img src="./img/menu.svg" alt="menu" onclick="toggle()" class="toggler">
+                      </div>
+                      <div class="search-bar">
+                          <input type="text"  placeholder="Birşeyler Ara :)..." class="global-search">
+                          <img src="./img/search.svg" alt="" class="search-icon"/>
+                      </div>
+                   </div>
+                   <div class="d-flex align-items-center">
+                          <div class="icon-btn">
+                              <img src="./img/notification.svg" alt="notification"/>
+                          </div>
+                          <div class="icon-btn">
+                            <img src="./img/setting.svg" alt="settings"/>
+                        </div>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <!-- Script -->
-    <script src="./js/index.js"></script>
+                   </div>
+                </div>
+
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="js/main.js"></script>
+
+
+
   </body>
 </html>

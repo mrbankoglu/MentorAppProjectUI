@@ -1,141 +1,205 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- StyleSheet -->
-  <link rel="stylesheet" href="./css/dashboard-style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.js"></script>
-  
-  <title>Mentor</title>
-</head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+    <link rel="stylesheet" href="css/dashboard-style.css"/>
 
-<body>
-  <div class="navigation">
-    <nav class="nav">
-      <div>
-        <a href="#" class="logo">
-          <span class="logo-icon">
-            <img src="img/bilgeadam.png" alt="">
-          </span>
-          <span class="logo-text"><b>BilgeAdam</b> Akademi</span>
-        </a>
-        <div class="toggle">
-          <ion-icon name="chevron-forward-outline"></ion-icon>
+    <title>Mentor</title>
+  </head>
+  <body>
+
+    <div class="page-container">
+        <div class="page-sidebar-wrapper">
+              <div class="sidebar">
+                    <div class="logo">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <img src="./img/bilgeadam.png" alt="logo" class="logo-img mr-3">
+                            <div class="logo-text">
+                                  <b>BilgeAdam</b> Akademi
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="nav flex-column menu-link">
+                      <li class="nav-item">
+                        <a href="index.html" class="nav-link"><img src="img/home.png" alt="dashboard">Anasayfa</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="yonetici.html" class="nav-link"><img src="img/moderator.png" alt="dashboard">Yönetici</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="egitim.html" class="nav-link"><img src="img/egitim.png" alt="dashboard">Eğitim</a>
+                </li>
+                      <li class="nav-item">
+                        <a href="egitimProgrami.html" class="nav-link"><img src="img/egitimprogrami.png" alt="dashboard">Eğitim Programı</a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="toplanti.html" class="nav-link"><img src="img/talk.png" alt="dashboard">Toplantı</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="mentee.html" class="nav-link"><img src="img/yonetici.png" alt="dashboard">Mentee</a>
+                </li>
+                <li class="nav-item">
+                  <a href="mentor.html" class="nav-link"><img src="img/businessman.png" alt="dashboard">Mentör</a>
+              </li>
+              <li class="nav-item">
+                <a href="sablon.html" class="nav-link"><img src="img/sablon.png" alt="dashboard">Şablon</a>
+            </li>
+                    </ul>
+              </div>
         </div>
+        <div class="page-content-wrapper">
+            <div class="page-content">
+                <div class="top-bar d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center">
+                      <div>
+                          <img src="./img/menu.svg" alt="menu" onclick="toggle()" class="toggler">
+                      </div>
+                      <div class="search-bar">
+                          <input type="text"  placeholder="Birşeyler Ara :)..." class="global-search">
+                          <img src="./img/search.svg" alt="" class="search-icon"/>
+                      </div>
+                   </div>
+                   <div class="d-flex align-items-center">
+                          <div class="icon-btn">
+                              <img src="./img/notification.svg" alt="notification"/>
+                          </div>
+                          <div class="icon-btn">
+                            <img src="./img/setting.svg" alt="settings"/>
+                        </div>
 
-        <ul class="nav-list">
-          <a href="dashboard.html" class="nav-link">
-            <span class="nav-icon">
-              <ion-icon name="home-outline"></ion-icon>
-            </span>
-            <span class="nav-text">Ana Sayfa</span>
-          </a>
-          <a href="#" class="nav-link">
-            <span class="nav-icon">
-              <ion-icon name="person-outline"></ion-icon>
-            </span>
-            <span class="nav-text">Yönetici</span>
-          </a>
-          <a href="#" class="nav-link">
-            <span class="nav-icon">
-              <ion-icon name="briefcase-outline"></ion-icon>
-            </span>
-            <span class="nav-text">Eğitim</span>
-          </a>
-          <a href="egitimprogrami.html" class="nav-link active">
-            <span class="nav-icon">
-              <ion-icon name="file-tray-full-outline"></ion-icon>
-            </span>
-            <span class="nav-text">Eğitim Programı</span>
-          </a>
-          <a href="#" class="nav-link">
-            <span class="nav-icon">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </span>
-            <span class="nav-text">Toplantı</span>
-          </a>
-          <a href="#" class="nav-link">
-            <span class="nav-icon">
-              <ion-icon name="accessibility-outline"></ion-icon>
-            </span>
-            <span class="nav-text">Mentee</span>
-          </a>
-          <a href="mentor.html" class="nav-link">
-            <span class="nav-icon">
-              <ion-icon name="walk-outline"></ion-icon>
-            </span>
-            <span class="nav-text">Mentor</span>
-          </a>
-          <a href="#" class="nav-link">
-            <span class="nav-icon">
-              <ion-icon name="reader-outline"></ion-icon>
-            </span>
-            <span class="nav-text">Şablon</span>
-          </a>
-        </ul>
-      </div>
-      <a href="#" class="nav-link">
-        <span class="nav-icon">
-          <ion-icon name="log-out-outline"></ion-icon>
-        </span>
-        <span class="nav-text">Çıkış</span>
-      </a>
-    </nav>
-  </div>
-  <div class="main-content">
-    <header>
-    </header>
-  </div>
-  <main>
-    <div class="main-page">
-      <h1>Mentor</h1>
-      <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum inventore perferendis, quis fugit culpa veniam
-        qui dolor eaque maxime, nisi nobis iusto vitae, maiores saepe tempore non asperiores repudiandae porro.</span>
-      <div class="main-button">
-        <a href="#" type="button">
-          <i class="fas fa-plus"></i>
-          <span class="nav-text">Mentor Ekle</span>
-        </a>
-        <a href="#" type="button">
-          <span class="nav-icon">
-            <ion-icon name="trail-sign-outline"></ion-icon>
-          </span>
-          <span class="nav-text">Mentee Eşleştir</span>
-        </a>
-        <a href="#" type="button">
-          <span class="nav-icon">
-            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
-          </span>
+                   </div>
+                </div>
 
-        </a>
 
-      </div>
-      <div class="mentor-list">
-        
-      </div>
+                <div class="inner-section">
+                    <h2 class="page-title">Mentör İşlemleri</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6 col-xl-4 col-12">
+                              <div class="dash-card d-flex align-items-center">
+                                    <div class="img-box customer1-box d-flex align-items-center justify-content-center mr-3">
+                                          <img src="./img/customers.svg" alt="customer1"/>
+                                    </div>
+                                    <div class="dash-content">
+                                            <h4>Yeni Mentör Oluştur</h4>
+
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-4 col-12">
+                          <div class="dash-card d-flex align-items-center">
+                                <div class="img-box customer2-box d-flex align-items-center justify-content-center mr-3">
+                                      <img src="./img/customers.svg" alt="customer2"/>
+                                </div>
+                                <div class="dash-content">
+                                        <h4>Mentör - Mentee Eşleştir</h4>
+                                </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 col-lg-6 col-xl-4 col-12">
+                      <div class="dash-card d-flex align-items-center">
+                            <div class="img-box customer3-box d-flex align-items-center justify-content-center mr-3">
+                                  <img src="./img/customers.svg" alt="customer3"/>
+                            </div>
+                            <div class="dash-content">
+                                    <h4>Deneme</h4>
+                            </div>
+                      </div>
+                </div>
+                    </div>
+
+
+                   <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                              <div class="dash-card">
+                                  <div class="d-flex justify-content-between align-items-center">
+                                      <h4>Mentör Listesi</h4>
+                                      <img src="./img/more.svg" alt="more"/>
+                                  </div>
+                                  <div class="table-responsive">
+                                  <table class="table">
+                                        <thead>
+                                                <tr>
+                                                  <th>Sıra.No</th>
+                                                  <th>Bölüm</th>
+                                                  <th>Ad Soyad</th>
+                                                  <th>İşlemler</th>
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                              <tr>
+                                                    <td>1</td>
+                                                    <td>mentor001</td>
+                                                    <td>Özgür Baybaş</td>
+                                                    <td class="guncelle"><button type="button" class="btn btn-outline-success">Güncelle</button></td>
+                                                    <td class="kisiBilgisi"><button type="button" class="btn btn-outline-dark">Kişi Bilgileri</button></td>
+                                                    <td class="sil"><button type="button" class="btn btn-outline-danger">Sil</button></td>
+                                                    <td class="sifresifirla"><button type="button" class="btn btn-outline-primary">Şifre Sıfırla</button></td>
+                                              </tr>
+                                              <tr>
+                                                    <td>2</td>
+                                                    <td>mentor002</td>
+                                                    <td>Özgür Baybaş</td>
+                                                    <td class="guncelle"><button type="button" class="btn btn-outline-success">Güncelle</button></td>
+                                                    <td class="kisiBilgisi"><button type="button" class="btn btn-outline-dark">Kişi Bilgileri</button></td>
+                                                    <td class="sil"><button type="button" class="btn btn-outline-danger">Sil</button></td>
+                                                    <td class="sifresifirla"><button type="button" class="btn btn-outline-primary">Şifre Sıfırla</button></td>
+                                              </tr>
+                                              <tr>
+                                                    <td>3</td>
+                                                    <td>mentor003</td>
+                                                    <td>Özgür Baybaş</td>
+                                                    <td class="guncelle"><button type="button" class="btn btn-outline-success">Güncelle</button></td>
+                                                    <td class="kisiBilgisi"><button type="button" class="btn btn-outline-dark">Kişi Bilgileri</button></td>
+                                                    <td class="sil"><button type="button" class="btn btn-outline-danger">Sil</button></td>
+                                                    <td class="sifresifirla"><button type="button" class="btn btn-outline-primary">Şifre Sıfırla</button></td>
+                                              </tr>
+                                              <tr>
+                                                    <td>4</td>
+                                                    <td>mentor004</td>
+                                                    <td>Özgür Baybaş</td>
+                                                    <td class="guncelle"><button type="button" class="btn btn-outline-success">Güncelle</button></td>
+                                                    <td class="kisiBilgisi"><button type="button" class="btn btn-outline-dark">Kişi Bilgileri</button></td>
+                                                    <td class="sil"><button type="button" class="btn btn-outline-danger">Sil</button></td>
+                                                    <td class="sifresifirla"><button type="button" class="btn btn-outline-primary">Şifre Sıfırla</button></td>
+                                              </tr>
+                                              <tr>
+                                                    <td>4</td>
+                                                    <td>mentor004</td>
+                                                    <td>Özgür Baybaş</td>
+                                                    <td class="guncelle"><button type="button" class="btn btn-outline-success">Güncelle</button></td>
+                                                    <td class="kisiBilgisi"><button type="button" class="btn btn-outline-dark">Kişi Bilgileri</button></td>
+                                                    <td class="sil"><button type="button" class="btn btn-outline-danger">Sil</button></td>
+                                                    <td class="sifresifirla"><button type="button" class="btn btn-outline-primary">Şifre Sıfırla</button></td>
+                                              </tr>
+                                        </tbody>
+                                  </table>
+                                  </div>
+                              </div>
+                        </div>
+
+                   </div>
+
+
+                </div>
+
+
+            </div>
+        </div>
     </div>
-  </main>
 
-  <!-- Ionicons -->
 
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-  
-  <!-- Script -->
-  <script src="./js/index.js"></script>
-  <script>
-    $(document).ready(function () {
-      $('#example').DataTable({
-        "ajax": '../ajax/data/arrays.txt'
-      });
-    });
-  </script>
-</body>
 
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="js/main.js"></script>
+
+
+
+  </body>
 </html>

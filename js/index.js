@@ -15,8 +15,8 @@ navLinks.forEach((link) => {
 toggle.addEventListener("click", () => {
   navigation.classList.toggle("active");
   if (navigation.classList.contains("active")) {
-    toggle.innerHTML = `<ion-icon name="chevron-back-outline"></ion-icon>`;
-  } else {
     toggle.innerHTML = `<ion-icon name="chevron-forward-outline"></ion-icon>`;
+  } else {
+    toggle.innerHTML = `<ion-icon name="chevron-back-outline"></ion-icon>`;
   }
 });
