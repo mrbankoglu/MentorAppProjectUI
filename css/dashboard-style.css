@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 :root {
-  --sidebarColor: #A71F23;
+  --sidebarColor: #1f8ca7;
   --sidebarColorClick: #6F1215;
   --sidebarTextColor: #ffffff;
   --tablethead: #555555;
+  --logoBackColor:#127e99;
 }
 
 
@@ -18,24 +19,23 @@ body {
 }
 .sidebar {
   position: fixed;
-  width: 250px;
+  width: 210px;
   height: 100%;
   background-color: var(--sidebarColor);
   float: left;
   overflow: hidden;
   transition: 0.1s;
-
 }
 .logo {
-  height: 80px;
+  height: 70px;
   padding: 15px;
-
+  /*background-color: var(--logoBackColor);*/
 }
 .logo-img {
   max-width: 40px;
 }
 .logo-text {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 400;
   color: var(--sidebarTextColor);
 }
@@ -105,7 +105,7 @@ body {
   width: 100%;
 }
 .page-content {
-  margin-left: 250px;
+  margin-left: 210px;
   min-height: 400px;
 }
 
@@ -216,7 +216,11 @@ body {
   color: var(--tablethead);
 }
 .table tbody td{
-  border:none;
+  vertical-align: middle;
+  border: none;
+}
+.table{
+  width: 80%;
 }
 .completed{
   color: #1ca590;
