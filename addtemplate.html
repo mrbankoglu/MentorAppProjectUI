@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+      <link rel="stylesheet" href="css/dashboard-style.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <title>Şablon Oluştur</title>
+</head>
+
+<body>
+
+      <div class="page-container">
+            <div class="page-sidebar-wrapper">
+                  <div class="sidebar">
+                        <div class="logo">
+                              <div class="d-flex justify-content-center align-items-center">
+                                    <img src="./img/bilgeadam.png" alt="logo" class="logo-img mr-3">
+                                    <div class="logo-text">
+                                          <b>BilgeAdam</b> Akademi
+                                    </div>
+                              </div>
+                        </div>
+
+                        <ul class="nav flex-column menu-link mt-4">
+                              <li class="nav-item">
+                                    <a href="dashboard.html" class="nav-link"><img src="img/home.png"
+                                                alt="dashboard">Anasayfa</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="yonetici.html" class="nav-link"><img src="img/moderator.png"
+                                                alt="dashboard">Yönetici</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="egitim.html" class="nav-link"><img src="img/egitim.png"
+                                                alt="dashboard">Eğitim</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="egitimProgrami.html" class="nav-link"><img src="img/egitimprogrami.png"
+                                                alt="dashboard">Eğitim Programı</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="toplanti.html" class="nav-link"><img src="img/talk.png"
+                                                alt="dashboard">Toplantı</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="mentee.html" class="nav-link"><img src="img/yonetici.png"
+                                                alt="dashboard">Mentee</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="mentor.html" class="nav-link"><img src="img/businessman.png"
+                                                alt="dashboard">Mentör</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="sablon.html" class="nav-link"><img src="img/sablon.png"
+                                                alt="dashboard">Şablon</a>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+            <div class="page-content-wrapper">
+                  <div class="page-content">
+                        <div class="top-bar d-flex justify-content-between align-items-center">
+                              <div class="d-flex align-items-center">
+                                    <div>
+                                          <img src="./img/menu.svg" alt="menu" onclick="toggle()" class="toggler">
+                                    </div>
+                                    <div class="search-bar">
+                                          <input type="text" placeholder="Birşeyler Ara :)..." class="global-search">
+                                          <img src="./img/search.svg" alt="" class="search-icon" />
+                                    </div>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                    <div class="icon-btn">
+                                          <img src="./img/notification.svg" alt="notification" />
+                                    </div>
+                                    <div class="icon-btn">
+                                          <img src="./img/setting.svg" alt="settings" />
+                                    </div>
+
+                              </div>
+                        </div>
+
+
+                        <div class="inner-section">
+                              <h2 class="page-title">Şablon Oluştur</h2>
+                              <div class="row">
+                                    <div class="col-md-12 col-lg-6">
+                                          <div class="dash-card">
+                                                <form class="needs-validation" novalidate>
+                                                      <div class="form-row">
+                                                            <div class="col-md-12 mb-3">
+                                                                  <label for="validationCustom01">Şablon Adı</label>
+                                                                  <input type="text" class="form-control"
+                                                                        id="validationCustom01"
+                                                                        placeholder="Şablon Adını Giriniz." value="" required>
+                                                                  <div class="valid-feedback">
+                                                                        İyi Görünüyor!
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="form-row">
+                                                            <div class="col-md-12 mb-3">
+                                                                  <label for="validationCustom02">Açıklama</label>
+                                                                  <input type="text" class="form-control"
+                                                                        id="validationCustom02"
+                                                                        placeholder="..." value="" required>
+                                                                  <div class="valid-feedback">
+                                                                        İyi Görünüyor!
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="form-row">
+                                                            <div class="col-md-12 mb-3">
+                                                                  <label for="validationCustom03">Eğitim Gün Sayısı</label>
+                                                                  <input type="text" class="form-control"
+                                                                        id="validationCustom03"
+                                                                        placeholder="..." value="" required>
+                                                                  <div class="valid-feedback">
+                                                                        İyi Görünüyor!
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="form-row">
+                                                            <div class="col-md-12 mb-3">
+                                                                  <label for="validationCustom04">Planlanan Görüşme Sayısı</label>
+                                                                  <input type="text" class="form-control"
+                                                                        id="validationCustom04"
+                                                                        placeholder="..." value="" required>
+                                                                  <div class="valid-feedback">
+                                                                        İyi Görünüyor!
+                                                                  </div>
+                                                            </div>
+                                                      </div>
+                                                      <div class="d-flex justify-content-center">
+                                                            <button class="btn btn-danger col-md-3" type="submit">Kaydet</button>
+                                                            <a href="sablon.html" class="btn btn-success ml-3" style="color: white!important;">Şablon Listesine Git</a>
+                                                      </div>
+
+                                          </div>
+                                          </form>
+                                    </div>
+                              </div>
+
+                        </div>
+
+
+                  </div>
+
+
+            </div>
+      </div>
+      </div>
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="js/main.js"></script>
+
+      <script>$('.dropdown-toggle').dropdown()</script>
+      <script>
+                  // Example starter JavaScript for disabling form submissions if there are invalid fields
+                  (function () {
+                        'use strict';
+                        window.addEventListener('load', function () {
+                              // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                              var forms = document.getElementsByClassName('needs-validation');
+                              // Loop over them and prevent submission
+                              var validation = Array.prototype.filter.call(forms, function (form) {
+                                    form.addEventListener('submit', function (event) {
+                                          if (form.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                          }
+                                          form.classList.add('was-validated');
+                                    }, false);
+                              });
+                        }, false);
+                  })();
+      </script>
+
+
+</body>
+
+</html>
