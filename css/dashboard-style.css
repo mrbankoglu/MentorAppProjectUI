@@ -8,7 +8,10 @@
   --logoBackColor:#127e99;
 }
 
-
+.row a{
+  text-decoration: none;
+  color: black;
+}
 
 body {
   margin: 0;
@@ -219,6 +222,7 @@ body {
   vertical-align: middle;
   border: none;
 }
+
 .table{
   width: 80%;
 }

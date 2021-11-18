@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+      <link rel="stylesheet" href="css/dashboard-style.css" />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+      <title>Mentee</title>
+</head>
+
+<body>
+
+      <div class="page-container">
+            <div class="page-sidebar-wrapper">
+                  <div class="sidebar">
+                        <div class="logo">
+                              <div class="d-flex justify-content-center align-items-center">
+                                    <img src="./img/bilgeadam.png" alt="logo" class="logo-img mr-3">
+                                    <div class="logo-text">
+                                          <b>BilgeAdam</b> Akademi
+                                    </div>
+                              </div>
+                        </div>
+
+                        <ul class="nav flex-column menu-link">
+                              <li class="nav-item">
+                                    <a href="index.html" class="nav-link"><img src="img/home.png"
+                                                alt="dashboard">Anasayfa</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="yonetici.html" class="nav-link"><img src="img/moderator.png"
+                                                alt="dashboard">Yönetici</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="egitim.html" class="nav-link"><img src="img/egitim.png"
+                                                alt="dashboard">Eğitim</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="egitimProgrami.html" class="nav-link"><img src="img/egitimprogrami.png"
+                                                alt="dashboard">Eğitim Programı</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="toplanti.html" class="nav-link"><img src="img/talk.png"
+                                                alt="dashboard">Toplantı</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="mentee.html" class="nav-link"><img src="img/yonetici.png"
+                                                alt="dashboard">Mentee</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="mentor.html" class="nav-link"><img src="img/businessman.png"
+                                                alt="dashboard">Mentör</a>
+                              </li>
+                              <li class="nav-item">
+                                    <a href="sablon.html" class="nav-link"><img src="img/sablon.png"
+                                                alt="dashboard">Şablon</a>
+                              </li>
+                        </ul>
+                  </div>
+            </div>
+            <div class="page-content-wrapper">
+                  <div class="page-content">
+                        <div class="top-bar d-flex justify-content-between align-items-center">
+                              <div class="d-flex align-items-center">
+                                    <div>
+                                          <img src="./img/menu.svg" alt="menu" onclick="toggle()" class="toggler">
+                                    </div>
+                                    <div class="search-bar">
+                                          <input type="text" placeholder="Birşeyler Ara :)..." class="global-search">
+                                          <img src="./img/search.svg" alt="" class="search-icon" />
+                                    </div>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                    <div class="icon-btn">
+                                          <img src="./img/notification.svg" alt="notification" />
+                                    </div>
+                                    <div class="icon-btn">
+                                          <img src="./img/setting.svg" alt="settings" />
+                                    </div>
+
+                              </div>
+                        </div>
+
+
+                        <div class="inner-section">
+                              <h2 class="page-title">Mentee İşlemleri</h2>
+                              <div class="row">
+                                    <div class="col-md-6 col-lg-5 col-xl-3 col-12">
+                                          <div class="dash-card d-flex align-items-center">
+                                                <div
+                                                      class="img-box customer1-box d-flex align-items-center justify-content-center mr-3">
+                                                      <img src="./img/customers.svg" alt="customer1" />
+                                                </div>
+                                                <div class="dash-content">
+                                                      <h4>Yeni Mentee Oluştur</h4>
+
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="row">
+                                    <div class="col-md-12 col-lg-6">
+                                          <div class="dash-card">
+                                                <div class="d-flex justify-content-between align-items-center bg-none">
+                                                      <h4>Mentee Listesi</h4>
+
+                                                </div>
+                                                <div class="table-responsive py-4">
+                                                      <table class="table">
+                                                            <thead>
+                                                                  <tr>
+                                                                        <th>Sıra.No</th>
+                                                                        <th>Eğitim</th>
+                                                                        <th>Ad Soyad</th>
+                                                                  </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                  <tr>
+                                                                        <td>1</td>
+                                                                        <td>Lisans</td>
+                                                                        <td>Yağız Bankoğlu</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <td>2</td>
+                                                                        <td>Lisans</td>
+                                                                        <td>Yağız Bankoğlu</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <td>3</td>
+                                                                        <td>Lisans</td>
+                                                                        <td>Yağız Bankoğlu</td>
+                                                                  </tr>
+                                                                  <tr>
+                                                                        <td>4</td>
+                                                                        <td>Lisans</td>
+                                                                        <td>Yağız Bankoğlu</td>
+                                                                  </tr>
+
+
+
+                                                            </tbody>
+                                                      </table>
+                                                </div>
+                                          </div>
+                                    </div>
+
+                              </div>
+
+
+                        </div>
+
+
+                  </div>
+            </div>
+      </div>
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="js/main.js"></script>
+
+      <script>$('.dropdown-toggle').dropdown()</script>
+
+
+
+</body>
+
+</html>
