@@ -33,7 +33,26 @@ a{
     padding-right: 10%;
     z-index: 1000;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
-
+}
+#mentorheader{
+  position:fixed;
+    top:0; left: 0; right:0;  
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+#mentorMenuList .nav-link{
+  color: black;
+    padding-left: 30px;
+}
+#mentorMenuList .nav-link:hover{
+  color: var(--red);
+    padding-left: 30px;
 }
 .siteLogo img{
     width: 300px;
@@ -42,11 +61,11 @@ a{
 }
 .menuBar a{
     color: black;
-    padding-left: 50px;
+    padding-left: 30px;
 }
 .menuBar a:hover{
     color: var(--red);
-    padding-left: 50px;
+    padding-left: 30px;
 }
 .loginButton a{
     background-color: var(--red);
