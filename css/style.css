@@ -46,11 +46,22 @@ a{
     z-index: 1000;
     box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
 }
+#UserMenu .dropdown-toggle::after{
+  content: none;
+}
 #mentorMenuList .nav-link{
   color: black;
     padding-left: 30px;
 }
 #mentorMenuList .nav-link:hover{
+  color: var(--red);
+    padding-left: 30px;
+}
+#UserMenu .nav-link{
+  color: black;
+    padding-left: 30px;
+}
+#UserMenu .nav-link:hover{
   color: var(--red);
     padding-left: 30px;
 }
@@ -83,6 +94,46 @@ a{
 
 
 /* About */
+#titlePage{
+  margin-top: 110px;
+}
+.page-title{
+  padding-bottom: 20px;
+}
+.dash-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  transition: .2s linear;
+}
+.dash-card:hover{
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 8px #888888;
+  transition: .2s linear;
+}
+.dash-content h4,
+.dash-content p {
+  margin: 0;
+}
+.dash-content h4 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.dash-content p {
+  font-weight: 700;
+  font-size: 16px;
+  color: #847b84;
+}
+.img-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+}
 section{
   padding:5rem 2%;
 }

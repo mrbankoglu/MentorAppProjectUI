@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Mail Gönder</title>
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex" id="mentorheader">
+    <a href="#" class="siteLogo"><img src="img/bilgeAdamAkademiLogo.png"></a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto" id="mentorMenuList">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Ana Sayfa</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mail
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="mentormailgonder.html">Mail Gönder</a>
+              <a class="dropdown-item" href="#">Gelen Kutusu</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Toplantı
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Toplantı Oluştur</a>
+            <a class="dropdown-item" href="#">Toplantı Listesi</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mentee
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Mentee Listesi</a>
+            <a class="dropdown-item" href="#">Toplantı Listesi</a>
+        </li>
+        
+      </ul>
+      <ul class="navbar-nav " id="UserMenu">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="ti-user"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#"><b>Yağız Bankoğlu</b></a>
+          <a class="dropdown-item" href="#">Bilgileri Düzenle</a>
+          <a class="dropdown-item" href="#">Çıkış</a>
+      </li>
+    </ul>
+    </div>
+  </nav>
+  <!-- header section ends -->
+  <!-- about bölümü başlar  -->
+  <div class="inner-section d-flex justify-content-center flex-column" id="titlePage">
+    <h2 class="page-title">Yeni Mentör Ekle</h2>
+    <div class="row">
+          <div class="col-md-12 col-lg-6">
+                <div class="dash-card">
+                      <form class="needs-validation" novalidate>
+                            <div class="form-row">
+                                  <div class="col-md-6 mb-3">
+                                        <label for="validationCustom01">Ad</label>
+                                        <input type="text" class="form-control"
+                                              id="validationCustom01"
+                                              placeholder="Adınızı Giriniz" value="" required>
+                                        <div class="valid-feedback">
+                                              İyi Görünüyor!
+                                        </div>
+                                  </div>
+                                  <div class="col-md-6 mb-3">
+                                        <label for="validationCustom02">Soyad</label>
+                                        <input type="text" class="form-control"
+                                              id="validationCustom02"
+                                              placeholder="Soyadınızı Giriniz" value=""
+                                              required>
+                                        <div class="valid-feedback">
+                                              İyi Görünüyor!
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="form-row">
+                                  <div class="col-md-12 mb-3">
+                                        <label for="validationCustomUsername">E-Posta
+                                              Adresi</label>
+                                        <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                    <span class="input-group-text"
+                                                          id="inputGroupPrepend">@</span>
+                                              </div>
+                                              <input type="text" class="form-control"
+                                                    id="validationCustomUsername"
+                                                    placeholder="E-Posta Adresi"
+                                                    aria-describedby="inputGroupPrepend"
+                                                    required>
+                                              <div class="invalid-feedback">
+                                                    E-Posta Adresi Boş Geçilemez!
+                                              </div>
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="form-row">
+                                  <div class="col-md-12 mb-3">
+                                        <label for="validationCustom03">Telefon Numarası</label>
+                                        <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                    <span class="input-group-text"
+                                                          id="inputGroupPrepend">
+                                                          <div class="ti-mobile"></div>
+                                                    </span>
+                                              </div>
+                                              <input class="form-control" type="tel" id="phone" name="phone" placeholder="053X XXX XX XX" pattern="[0-9]{4} [0-9]{3} [0-9]{2} [0-9]{2}" required>
+                                              <div class="invalid-feedback">
+                                                    Telefon Numaranızı Giriniz. 
+                                              </div>
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="form-row">
+                                  <div class="col-md-12 mb-3">
+                                        <label for="validationCustom03">Birim</label>
+                                        <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                    <span class="input-group-text"
+                                                          id="inputGroupPrepend">
+                                                          <div class="ti-briefcase"></div>
+                                                    </span>
+                                              </div>
+
+                                              <input type="text" class="form-control"
+                                                    id="validationCustom03" placeholder="..."
+                                                    required>
+                                              <div class="invalid-feedback">
+                                                    Lütfen Birim Giriniz!
+                                              </div>
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="form-row">
+                                  <div class="col-md-12 mb-3">
+                                        <label for="validationCustom04">Görev</label>
+                                        <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                    <span class="input-group-text"
+                                                          id="inputGroupPrepend">
+                                                          <div class="ti-flag-alt-2"></div>
+                                                    </span>
+                                              </div>
+                                              <input type="text" class="form-control"
+                                                    id="validationCustom04"
+                                                    placeholder="Görevinizi Giriniz" required>
+                                              <div class="invalid-feedback">
+                                                    Görev Alanı Boş Geçilemez
+                                              </div>
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="form-row">
+                                  <div class="col-md-12 mb-3">
+                                        <label for="validationCustom04">Uzmanlık
+                                              Alanları</label>
+                                        <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                    <span class="input-group-text"
+                                                          id="inputGroupPrepend">
+                                                          <div class="ti-cup"></div>
+                                                    </span>
+                                              </div>
+                                              <input type="text" class="form-control"
+                                                    id="validationCustom04"
+                                                    placeholder="Uzmanlık Alanlarınızı Giriniz"
+                                                    required>
+                                              <div class="invalid-feedback">
+                                                    Bu Alan Boş Geçilemez
+                                              </div>
+                                        </div>
+                                        <span class="uzmanlikAlaniUyari">Uzmanlık Alanlarını
+                                              ',' İle Ayırınız.</span>
+                                  </div>
+                            </div>
+                            <div class="form-row">
+                                  <div class="col-md-12 mb-3">
+                                        <label for="validationCustom04">Maksimum Mentee
+                                              Sayısı</label>
+                                        <div class="input-group">
+                                              <div class="input-group-prepend">
+                                                    <span class="input-group-text"
+                                                          id="inputGroupPrepend">
+                                                          <div class="ti-id-badge"></div>
+                                                    </span>
+                                              </div>
+                                              <input type="text" class="form-control"
+                                                    id="validationCustom04"
+                                                    placeholder="Maksimum Mentee Sayısı Giriniz."
+                                                    required>
+                                              <div class="invalid-feedback">
+                                                    Bu Alan Boş Geçilemez.
+                                              </div>
+                                        </div>
+                                  </div>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                  <button class="btn btn-danger col-md-4" type="submit">Kayıt Oluştur</button>
+                                  <a href="mentor.html" class="btn btn-success ml-3" style="color: white!important;">Mentör Listesine Git</a>
+                            </div>
+
+                </div>
+                </form>
+          </div>
+    </div>
+
+</div>
+  <!-- End Footer -->
+  <!-- Script bölümü  -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+
+
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+
+    menu.addEventListener('click', () => {
+      menu.classList.toggle('fa-times');
+      navbar.classList.toggle('nav-toggle');
+    });
+
+    window.onscroll = () => {
+      menu.classList.remove('fa-times');
+      navbar.classList.remove('nav-toggle');
+    }
+  </script>
+</body>
+
+</html>
