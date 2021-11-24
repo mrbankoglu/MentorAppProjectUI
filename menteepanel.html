@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lykmapipo/themify-icons@0.1.2/css/themify-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <!-- font awesome cdn link  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- custom css file link  -->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mentee Paneli</title>
+
+</head>
+
+<body>
+
+  <!-- header section starts  -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex" id="mentorheader">
+    <a href="#" class="siteLogo"><img src="img/bilgeAdamAkademiLogo.png"></a>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto" id="mentorMenuList">
+        <li class="nav-item active">
+          <a class="nav-link" href="menteepanel.html">Ana Sayfa</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Mail
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="menteemailgonder.html">Mail Gönder</a>
+              <a class="dropdown-item" href="menteegelenkutusu.html">Gelen Kutusu</a>
+          </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Toplantı
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="menteetoplantiolustur.html">Toplantı Oluştur</a>
+            <a class="dropdown-item" href="menteetoplantilistesi.html">Toplantı Listesi</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mentör
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="menteementorlistesi.html">Mentör Listesi</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Soru
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="menteesoruolustur.html">Soru Oluştur</a>
+        </li>
+        
+      </ul>
+      <ul class="navbar-nav " id="UserMenu">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="ti-user"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#"><b>Yağız Bankoğlu</b></a>
+          <a class="dropdown-item" href="#">Bilgileri Düzenle</a>
+          <a class="dropdown-item" href="#">Çıkış</a>
+      </li>
+    </ul>
+    </div>
+  </nav>
+  <!-- header section ends -->
+  <!-- about bölümü başlar  -->
+  <!-- End Footer -->
+  <!-- Script bölümü  -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script>
+
+
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+
+    menu.addEventListener('click', () => {
+      menu.classList.toggle('fa-times');
+      navbar.classList.toggle('nav-toggle');
+    });
+
+    window.onscroll = () => {
+      menu.classList.remove('fa-times');
+      navbar.classList.remove('nav-toggle');
+    }
+  </script>
+</body>
+
+</html>
